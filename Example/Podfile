@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'my_imyPlugin_deml_Example' do
+  pod 'my_imyPlugin_deml', :path => '../'
+
+  target 'my_imyPlugin_deml_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
